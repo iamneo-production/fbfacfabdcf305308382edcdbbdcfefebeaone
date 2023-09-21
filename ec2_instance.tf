@@ -1,5 +1,15 @@
+terraform {
+    required_providers {
+        aws = {
+            source = "hashicorp/aws"
+        }
+    }
+}
+
 provider "aws" {
-    region = "ap-northeasr-1"
+    region = "ap-northeast-1"
+    access_key = "AKIAURI7ZXKCJYXNEDUE"
+    secret_key = "fbZ+1Jqn0XHsbxWPYqvbcQgcCW9Edaz9moIju1vl"
 }
 
 resource "aws_instance" "example" {
